@@ -4,20 +4,20 @@ classDiagram
 	Solution development timeline
 	}
 	class Test Operation { 
-	Interface to involved TA tools
+	Interface of involved TA tools
 	Acceptance test scenario
 	}
 	class solution vendor {
 	SDK for solution
 	Source code of access to interface
 	}
-	Test Platform Development {
+	class Test Platform Development {
 	Scripts of test interface
 	Solution develiver plan
 	TA requirement
 	}
 	Test Platform Development "1" <--o "*" Product Owner: fetch
-  	Test Platform Development "1" <--o "*" Test operation: fetch
-   	Solution vendor "1" <--o "*" Test platform development: Capa list
-    	Test Platform Development "1" <--o "*" Solution vendor: deliver
-     	Test Platform Development "1" <--o "*" Product owner: deliver with PoC
+  	Test Platform Development "1" <--o "*" Test Operation: fetch
+   	solution vendor "1" <--o "*" Test Platform Development: Capa list
+    	Test Platform Development "1" <--o "*" solution vendor: deliver
+    	Test Platform Development "1" <--o "*" Product Owner: deliver with PoC
