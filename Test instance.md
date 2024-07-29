@@ -17,7 +17,7 @@ classDiagram
 	Test instance building documents(test instance layout, wiring documents, components lists)
 	Test instance building plan
 	Test instance issue management trace
-  }
+  	}
 	class Supplier {
 	test instance building execution
 	}
