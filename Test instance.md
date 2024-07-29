@@ -5,13 +5,13 @@ classDiagram
 	}
 	class PM {
 	GVDP
-	#Global vehicle development plan
+	    #Global vehicle development plan
 	}
 	class Test Operation {
 	Test environment
-	#open loop or close loop
+	    #open loop or close loop
 	Test requirement
-	#test interface, simulator, loader, TA requirements
+	    #test interface, simulator, loader, TA requirements
 	}
 	class Test Platform Development {
 	Test instance building documents(test instance layout, wiring documents, components lists)
@@ -23,6 +23,6 @@ classDiagram
 	}
 	Test Platform Development "1" <--o "*" VSE: fetch
 	Test Platform Development "1" <--o "*" PM: fetch
-	PM "1" <--o "*" Test platform development: feedback
+	Test Platform Development "1" --> "1" PM : Test instance building plan
 	Test Platform Development "1" <--o "*" Test Operation: fetch
-	Supplier "1" <--o "*" Test Platform Development: Transfer
+	Supplier "1" <--o "*" Test Platform Development: Test instance building documents
