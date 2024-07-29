@@ -23,6 +23,6 @@ classDiagram
 	}
 	Test Platform Development "1" <--o "*" VSE: fetch
 	Test Platform Development "1" <--o "*" PM: fetch
-	PM "1" <--o "*" PM: feedback
+	PM "1" <--o "*" Test platform development: feedback
 	Test Platform Development "1" <--o "*" Test Operation: fetch
 	Supplier "1" <--o "*" Test Platform Development: Transfer
