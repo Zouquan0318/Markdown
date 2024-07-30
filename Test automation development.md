@@ -19,5 +19,5 @@ classDiagram
 	Test Platform Development "1" <--o "*" Product Owner: fetch
   	Test Platform Development "1" <--o "*" Test Operation: fetch
    	solution vendor "1" <--o "*" Test Platform Development: Capa list
-    	Test Platform Development "1" <--o "*" solution vendor: deliver
-    	Test Platform Development "1" <--o "*" Product Owner: deliver with PoC
+    Test Platform Development "1" <--o "*" solution vendor: deliver
+    Product Owner "1" <--o "*" Test Platform Development: deliver with PoC
