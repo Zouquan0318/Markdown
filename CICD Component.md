@@ -1,12 +1,16 @@
 sequenceDiagram
-    participant I as Integration Cockpit
-    participant J as Jenkins Server
+    participant A as Artifactory management
+    participant R as Resource management
+    participant C as CICD workflow
     participant T as Test automation system
 
-    I->>J: Test request
-    J->>T: Test case execution command
-    T->>T: Test case execution
-    par
-        T->>I: Test status feedback
+    A->>C: Test environment initial by test plan and test
+    C->>C: Manual test or Automatic test start
+    C->>T: Test Job deploy
+        par
+        T->>R: Test status feedback
     END
-  
+    T->>T: TA execution
+    T->>C: TA log feedbak
+    C->>A: Test log synchronization
+    C->>A: Test result synchronization
