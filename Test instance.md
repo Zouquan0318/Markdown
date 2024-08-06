@@ -11,10 +11,10 @@ classDiagram
 	Test environment
 	    #open loop or close loop
 	Test requirement
-	    #test interface, simulator, loader, TA requirements
+	    #test automation capacities,test interface, simulator, loader, TA requirements
 	}
 	class Test Platform Development {
-	Test instance building documents(test instance layout, wiring documents, components lists)
+	Test instance building documents(network topology diagram,test instance layout, wiring documents, components lists)
 	Test instance building plan
 	Test instance issue management trace
   	}
